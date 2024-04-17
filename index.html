@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <div id="tabs">
+            <p id="lt" class="tabs" onclick="logintab()">Login</p>
+            <p id="rt" class="tabs" onclick="registertab()">Register</p>
+        </div>
+
+
+        <div class="scont">
+            <div id="login" class="comm">
+                <h3 class="sam">Sign in</h3>
+                <input type="email" id="se" placeholder="Email" required>  
+                <input type="password" id="sp" placeholder="Password" required>  
+                <input type="submit" onclick="login()" value="Login">
+                <p class="fp" onclick="fortab()">Forgot password?</p>
+                <p class="loginOtp" onclick="otptab()">Login with OTP</p>
+            </div>
+            <div id="register" class="comm">
+                <h3 class="sam">Register</h3>
+                <input type="email" id="re" placeholder="Email" required>  
+                <input type="password" id="rp" placeholder="Password" required>  
+                <input type="password" id="rrp" placeholder=" Rewrite Password" required>  
+                <input type="submit" onclick="register()" value="Register">
+            </div>
+            <div id="forgot" class="comm">
+                <h3 class="sam">Forgot Password</h3>
+                <input type="email" id="fe" placeholder="Email" required>  
+                <input type="submit" onclick="forgot()" value="Submit">
+            </div>
+            <div id="loginWithOtp" class="comm">
+                <h3 class="sam">Login with OTP</h3>
+                <input type="text" id="inputOtp" placeholder="Enter OTP" required>  
+                <input type="submit" onclick="generateOtp()" value="Generate OTP">
+                <input type="submit" onclick="loginSuccess()" value="Submit">
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
